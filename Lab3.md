@@ -45,16 +45,24 @@ The fix addresses the bug because a temporary variable is used to store a given 
 
   **Part 2**
   *4 implementations of grep with two examples for each implementation* <br>
-  1. -v to display the non matching lines. It outputs all the lines that don't contain the word.<br>
+  1.   -v to display the non matching lines. It outputs all the lines that don't contain the word.<br>
+ ```grep -v biomed technical/biomed/1468-6708-3-1.txt``` <br>
 ![Image](Lab3_P2_-v1.png)<br>
+```grep -v morning technical/911report/chapter-1.txt``` <br>
 ![Image](Lab3_P2_-v2.png)<br>
   2. -q to cause the grep to go silent (not release an output). The command only has an output after the echo $? command. It prints 0 if the string was found and it prints 1 if it was not found.<br>
+  ```grep -q between technical/plos/journal.pbio.0020001.txt``` <br>
 ![Image](Lab3_P2_-q1.png)<br>
+```grep -q biology technical/biomed/1471-213X-1-4.txt``` <br>
 ![Image](Lab3_P2_-q2.png)<br>
   3. -r recursive searches through nested directories. It searches through the nested directories (from the working directory) to find the desired word. <br>
+```grep -r -i dead``` <br>
 ![Image](Lab3_P2_-r2.png)<br>
+```grep -r -i beauty``` <br>
 ![Image](Lab3_P2_-r1.png)<br>
-  4. -i ignores case. If the command is not case sensitive and just outputs all lines containing the word regardless of case<br>
+  5. -i ignores case. If the command is not case sensitive and just outputs all lines containing the word regardless of case<br>
 ![Image](Lab3_P2_-i1.png)<br>
+```grep -i Have technical/plos/journal.pbio.0020035.txt```
 ![Image](Lab3_P2_-i2.png)<br>
+```grep -i BeEN technical/biomed/1471-213X-1-11.txt``` <br>
 source: https://www.howtogeek.com/496056/how-to-use-the-grep-command-on-linux/ 
