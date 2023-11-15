@@ -1,22 +1,26 @@
 **Part 1** <br>
 Bug: in reverseInPlace method- the spots must be swapped but the values are overriden <br>
 *A failure-inducing input for the buggy program, as a JUnit test and any associated code* <br>
-  @Test <br>
-  public void testArrayExamplesOG(){ <br>
-    //bugs in reverse in place method <br>
-    int[] arr1 = {1,2,3}; <br>
-    ArrayExamples.reverseInPlaceOG(arr1); <br>
-    int[] exparr1 = {3,2,1}; <br>
-    assertArrayEquals(exparr1, arr1); <br>
-  } <br>
+  ```
+  @Test 
+  public void testArrayExamplesOG(){ 
+    //bugs in reverse in place method 
+    int[] arr1 = {1,2,3};
+    ArrayExamples.reverseInPlaceOG(arr1); 
+    int[] exparr1 = {3,2,1}; 
+    assertArrayEquals(exparr1, arr1); 
+  } 
+  ```
 
 *An input that doesn’t induce a failure, as a JUnit test and any associated code <br>*
-	@Test <br>
-	public void testReverseInPlace() { <br>
-    int[] input1 = { 3 }; <br>
-    ArrayExamples.reverseInPlace(input1); <br>
-    assertArrayEquals(new int[]{ 3 }, input1); <br>
-	} <br>
+```	
+ @Test <br>
+public void testReverseInPlace() { 
+    int[] input1 = { 3 }; 
+    ArrayExamples.reverseInPlace(input1); 
+    assertArrayEquals(new int[]{ 3 }, input1);
+}
+```
 
 *The symptom, as the output of running the tests (provide it as a screenshot of running JUnit with at least the two inputs above)*
 ![Image](Lab3_Symptom.png)<br>
