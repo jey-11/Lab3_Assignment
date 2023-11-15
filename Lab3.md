@@ -14,7 +14,7 @@ Bug: in reverseInPlace method- the spots must be swapped but the values are over
 
 *An input that doesn’t induce a failure, as a JUnit test and any associated code <br>*
 ```	
- @Test <br>
+ @Test 
 public void testReverseInPlace() { 
     int[] input1 = { 3 }; 
     ArrayExamples.reverseInPlace(input1); 
