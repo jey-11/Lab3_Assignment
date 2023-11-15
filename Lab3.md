@@ -54,6 +54,7 @@ grep -v biomed technical/biomed/1468-6708-3-1.txt
 grep -v morning technical/911report/chapter-1.txt
 ``` 
 ![Image](Lab3_P2_-v2.png)<br>
+output is shown below, but I am unable to scroll up to the command. <br>
 ![Image](Lab3_P2_extra.png)<br>
   3. -q to cause the grep to go silent (not release an output). The command only has an output after the echo $? command. It prints 0 if the string was found and it prints 1 if it was not found.<br>
 ```
