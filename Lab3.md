@@ -46,7 +46,9 @@ The fix addresses the bug because a temporary variable is used to store a given 
   **Part 2**
   *4 implementations of grep with two examples for each implementation* <br>
   1.   -v to display the non matching lines. It outputs all the lines that don't contain the word.<br>
-    grep -v biomed technical/biomed/1468-6708-3-1.txt
+```
+grep -v biomed technical/biomed/1468-6708-3-1.txt
+```
 ![Image](Lab3_P2_-v1.png)<br>
 grep -v morning technical/911report/chapter-1.txt
 ``` <br>
