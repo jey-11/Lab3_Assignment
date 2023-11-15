@@ -30,21 +30,25 @@ output of the non failure inducing input test
 
 *The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown)*
   original code <br>
-  static void reverseInPlaceOG(int[] arr) { <br>
-    for(int i = 0; i < arr.length; i += 1) { <br>
-      arr[i] = arr[arr.length - i - 1]; <br>
-    } <br>
-  }<br>
+  ```
+  static void reverseInPlaceOG(int[] arr) { 
+    for(int i = 0; i < arr.length; i += 1) { 
+      arr[i] = arr[arr.length - i - 1]; 
+    } 
+  }
+```
 
 *after code*
-  static void reverseInPlace(int[] arr) <br>
-    int temp = 0; <br>
-    for(int i = 0; i < arr.length/2; i += 1) { <br>
-      temp = arr[i]; <br>
-      arr[i] = arr[arr.length - i - 1]; <br>
-      arr[arr.length-i-1] = temp; <br>
-    } <br>
-  } <br>
+```
+  static void reverseInPlace(int[] arr) 
+    int temp = 0; 
+    for(int i = 0; i < arr.length/2; i += 1) { 
+      temp = arr[i]; 
+      arr[i] = arr[arr.length - i - 1];
+      arr[arr.length-i-1] = temp; 
+    } 
+  }
+```
 The fix addresses the bug because a temporary variable is used to store a given value, therefore the value will not be lost. Also, since the fist half/second half are being swapped the loop only iterates to the arr.length/2
 
   **Part 2**
